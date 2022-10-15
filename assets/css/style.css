@@ -39,8 +39,11 @@ img {
 
 /* Header Part CSS Start */
 
+/* Navbar Section CSS Start */
+
 .nav-wrapper {
-  padding: 30px 0;
+  padding: 25px 0;
+  border-bottom: 1px solid #ffffff;
 }
 
 .menu ul li {
@@ -74,4 +77,322 @@ img {
   border-radius: 5px;
 }
 
+/* Navbar Section CSS End */
+
+/* Submenu Section CSS Start */
+
+section#Submenu {
+  background: black;
+  padding-top: 15px;
+}
+
+.menu-social a {
+  padding-right: 25px;
+}
+
+.search p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0;
+  padding-left: 5px;
+}
+
+.chevron-down {
+  margin-top: -15px;
+}
+
+.schedule-meeting p {
+  font-size: 17px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* Submenu Section CSS End */
+
+/* Hero Section CSS Start */
+
+.hero-wrapper {
+  padding: 80px 0;
+}
+
+.hero-video {
+  height: 100vh;
+}
+
+iframe {
+  width: 100%;
+  height: 100%;
+}
+
+/* Hero Section CSS End */
+
 /* Header Part CSS End */
+
+/* Main Part CSS Start */
+
+/* Davinci Section CSS Start */
+
+.davinci-content {
+  background: url(../images/davinci.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 700px;
+}
+
+.davinci-top,
+.beachgate-top {
+  text-align: center;
+}
+
+.davinci-top h2,
+.beachgate-top h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.davinci-top p,
+.beachgate-top p {
+  font-size: 22px;
+  color: #c49e55;
+  letter-spacing: 10px;
+}
+
+.davinci-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 100px;
+  margin-top: 50px;
+}
+
+.davinci-content h4 {
+  max-width: 450px;
+  font-size: 30px;
+  color: #ffffff;
+  letter-spacing: 10px;
+  padding-bottom: 25px;
+}
+
+.davinci-content a {
+  width: 120px;
+  text-align: center;
+  background: #ffffff;
+  padding: 4px;
+  font-size: 18px;
+  color: #000000;
+  border-radius: 5px;
+}
+
+/* Davinci Section CSS End */
+
+/* FAQ Section CSS Start */
+
+.faq-wrapper {
+  padding: 60px 0;
+}
+
+.accordion-item {
+  background: transparent;
+  border: none;
+  margin-bottom: 10px;
+}
+
+.accordion-button {
+  font-size: 30px;
+  color: #ffffff;
+  background: transparent !important;
+  padding-left: 40px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.accordion-button:not(.collapsed) {
+  color: #c49e55;
+  border-bottom: 1px solid #c49e55 !important;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+  border-color: #ffffff;
+}
+
+.accordion-button::after {
+  background: url(../images/plus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+}
+
+.accordion-button:not(.collapsed)::after {
+  background: url(../images/minus.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: absolute;
+  left: 0;
+  top: 15px;
+}
+
+.accordion-body {
+  padding: 0;
+}
+
+.accordion-text p {
+  font-size: 14px;
+  font-weight: 300;
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+/* FAQ Section CSS End */
+
+/* Satus Section CSS Start */
+
+.status-wrapper {
+  background: #111111;
+  padding: 80px 0;
+}
+
+.status-item {
+  text-align: center;
+}
+
+.border-right {
+  border-right: 1px solid #4d4d4e;
+}
+
+.status-item h2 {
+  position: relative;
+  font-family: "EB Garamond", serif;
+  font-size: 150px;
+  color: #342d1e;
+}
+
+.status-item h2 p {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-family: "Montserrat", sans-serif;
+  font-size: 26px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  color: #ffffff;
+}
+
+/* Satus Section CSS End */
+
+/* Beachgate Section CSS Start */
+
+#Beachgate {
+  padding: 80px 0;
+}
+
+.beachgate-time {
+  max-width: 600px;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 0;
+}
+
+.beachgate-time .status-item {
+  max-width: 50%;
+  width: 100%;
+}
+
+.video-thumb {
+  position: relative;
+}
+
+.video-thumb a {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 120px;
+  height: 120px;
+  background: #ffffff;
+  border: 13px solid #c7c7c7;
+  text-align: center;
+  padding: 30px 35px;
+  border-radius: 50%;
+}
+
+/* Beachgate Bottom */
+
+.beachgate-bottom {
+  padding-top: 60px;
+}
+
+.beachgate-bottom h3 {
+  font-size: 25px;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 15px;
+  color: #ffffff;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #ffffff;
+}
+
+.aminities {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+  padding-top: 50px;
+}
+
+.aminities-item {
+  align-self: center;
+  justify-items: center;
+  text-align: center;
+}
+
+.aminities-item h5 {
+  font-size: 18px;
+  letter-spacing: 5px;
+  color: #ffffff;
+  padding-top: 20px;
+}
+
+.bg-explore h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.bg-explore p {
+  font-size: 20px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 25px 0;
+}
+
+.bg-buttons {
+  padding-top: 30px;
+}
+
+a.explore-btn {
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 50px;
+  border-radius: 5px;
+}
+
+a.download-btn {
+  font-size: 22px;
+  font-weight: 300;
+  color: #000000;
+  background: #ffffff;
+  border: 1px solid #ffffff;
+  padding: 12px 50px;
+  border-radius: 5px;
+  margin-left: 25px;
+}
+
+/* Beachgate Section CSS End */
+
+/* Main Part CSS End */
