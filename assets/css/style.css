@@ -287,6 +287,7 @@ iframe {
 
 #Beachgate {
   padding: 80px 0;
+  background: #111111;
 }
 
 .beachgate-time {
@@ -395,4 +396,274 @@ a.download-btn {
 
 /* Beachgate Section CSS End */
 
+/* Corporate Section CSS Start */
+
+#Corporate {
+  padding: 80px 0;
+}
+
+.corporate-top {
+  text-align: center;
+}
+
+.corporate-top h2 {
+  font-size: 48px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.corporate-top p {
+  font-size: 22px;
+  font-weight: 300;
+  color: #ffffff;
+  padding-top: 15px;
+}
+
+.corporate-items {
+  padding-top: 80px;
+}
+
+.corporate-item {
+  position: relative;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+  padding: 80px 10px 80px 80px;
+}
+
+.corporate-item h3 {
+  font-size: 25px;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.corporate-item p {
+  color: #ffffff;
+  padding-top: 10px;
+}
+
+.corp-shape {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  left: -20px;
+}
+
+/* Corporate Section CSS End */
+
+/* Company Section CSS Start */
+
+#Company {
+  padding: 80px 0;
+  background: #111111;
+}
+
+.company-brands {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 25px;
+}
+
+/* Company Section CSS End */
+
+/* Clients Section CSS Start */
+
+.clients-wrapper {
+  padding: 80px 0;
+}
+
+.slider img {
+  padding: 0 25px;
+}
+
+.slider button {
+  display: none !important;
+}
+
+.clients-content {
+  padding-left: 30%;
+}
+
+.clients-content h2 {
+  font-size: 35px;
+  color: #ffffff;
+}
+
+.clients-content p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.clients-content a {
+  font-size: 22px;
+  color: #ffffff;
+  padding: 12px 50px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+/* Clients Section CSS End */
+
+/* Blog Section CSS Start */
+
+.blog-wrapper {
+  padding: 80px 0;
+  background: #111111;
+}
+
+.blog-top h2 {
+  font-size: 48px;
+  color: #ffffff;
+  padding-bottom: 50px;
+}
+
+.blog-card::after {
+  position: absolute;
+  content: "";
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.blog-content {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  padding: 30px 20px;
+  z-index: 1;
+}
+
+.publish-date p {
+  font-size: 28px;
+  color: #ffffff;
+}
+
+.blog-content h6 {
+  font-size: 25px;
+  font-weight: 400;
+  line-height: 35px;
+  color: #ffffff;
+  padding-top: 30px;
+}
+
+.blog-content a {
+  position: absolute;
+  bottom: 30px;
+  right: 20px;
+}
+
+/* Blog Section CSS End */
+
 /* Main Part CSS End */
+
+/* Footer Section css Start */
+
+.footer-wrapper {
+  padding: 80px 0;
+  background: #111111;
+}
+
+.footer-info p {
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+.footer-info a {
+  font-size: 22px;
+  color: #ffffff;
+  padding: 12px 50px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.footer-links h5,
+.visit h5 {
+  font-size: 25px;
+  font-weight: 300;
+  color: #ffffff;
+  padding-bottom: 30px;
+}
+
+.footer-menu li {
+  padding-bottom: 20px;
+}
+
+.footer-menu a {
+  font-size: 18px;
+  font-weight: 300;
+  color: #575757;
+}
+
+.footer-social {
+  padding-top: 30px;
+}
+
+.footer-social a {
+  padding-right: 27px;
+}
+
+.privacy {
+  padding-top: 60px;
+}
+
+.privacy a {
+  position: relative;
+  font-size: 18px;
+  font-weight: 300;
+  color: #ffffff;
+  padding-right: 40px;
+}
+
+.privacy a::after {
+  position: absolute;
+  content: "";
+  width: 1px;
+  height: 100%;
+  left: 85px;
+  background: #ffffff;
+}
+
+.privacy a:last-child::after {
+  display: none;
+}
+
+.field-group {
+  display: flex;
+  width: 100%;
+  padding: 12px 30px;
+  margin-bottom: 20px;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+.field-group input {
+  width: 100%;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding-left: 30px;
+  color: #ffffff;
+}
+
+.field-group ::placeholder {
+  color: #ffffff;
+}
+
+.submit-btn input {
+  width: 100%;
+  font-size: 20px;
+  font-weight: 600;
+  padding: 10px 30px;
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+  border-radius: 5px;
+}
+
+/* Footer Section css End */
