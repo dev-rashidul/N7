@@ -124,6 +124,16 @@
   .status-item h2 {
     font-size: 100px;
   }
+
+  .projects-buttons {
+    padding-top: 20px;
+  }
+
+  .nav-pills .nav-link {
+    font-size: 11px;
+    padding: 0 11px;
+  }
+
   .projects-title h2 {
     font-size: 25px;
   }
@@ -200,10 +210,17 @@
 
   .search-form-container {
     top: 100px;
+    width: 80%;
   }
 
   .meeting-form {
     top: 129px;
+    width: 80%;
+    left: 40%;
+  }
+
+  .meeting-form h2 {
+    font-size: 22px;
   }
 
   .range-slider {
