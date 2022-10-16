@@ -35,6 +35,16 @@
   .status-item h2 {
     font-size: 120px;
   }
+
+  .projects-buttons {
+    position: absolute;
+    right: 0;
+  }
+
+  .projects-wrapper .tab-content {
+    margin-top: 50px;
+  }
+
   .projects-title h2 {
     font-size: 25px;
   }
