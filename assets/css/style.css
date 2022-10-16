@@ -274,7 +274,7 @@ section#Submenu {
 }
 
 .meeting-form {
-  position: fixed;
+  position: absolute;
   top: 180px;
   left: 50%;
   transform: translate(-50%);
