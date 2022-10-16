@@ -1,0 +1,194 @@
+@media (min-width: 1200px) and (max-width: 1400px) {
+}
+@media (min-width: 300px) and (max-width: 1199px) {
+  .navigation,
+  #Submenu {
+    display: none;
+  }
+  #Mobile-nav {
+    display: block;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1199px) {
+  .davinci-top h2,
+  .beachgate-top h2,
+  .bg-explore h2,
+  .corporate-top h2,
+  .blog-top h2 {
+    font-size: 45px;
+  }
+  .davinci-top p,
+  .beachgate-top p {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  .davinci-content {
+    padding-left: 50px;
+  }
+  .davinci-content h4 {
+    max-width: 80%;
+  }
+  .status-item {
+    margin-bottom: 40px;
+  }
+  .status-item h2 {
+    font-size: 120px;
+  }
+  .projects-title h2 {
+    font-size: 25px;
+  }
+  .clients-content {
+    padding: 0 10%;
+  }
+
+  .footer-info {
+    text-align: center;
+    padding: 0 50px;
+  }
+
+  .about-btn {
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .interest {
+    padding-bottom: 50px;
+  }
+  .interest h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+
+  .interest input {
+    width: 100%;
+    background: transparent;
+    padding: 12px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  input.subs-btn {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}
+
+@media (min-width: 300px) and (max-width: 767px) {
+  .hero-video {
+    height: 60vh;
+  }
+
+  .davinci-top h2,
+  .beachgate-top h2,
+  .bg-explore h2,
+  .corporate-top h2,
+  .blog-top h2,
+  .clients-content h2 {
+    font-size: 30px;
+  }
+  .davinci-top p,
+  .beachgate-top p {
+    font-size: 16px;
+    letter-spacing: 5px;
+  }
+  .davinci-content {
+    padding-left: 20px;
+  }
+  .davinci-content h4 {
+    max-width: 100%;
+    font-size: 24px;
+    line-height: 40px;
+  }
+  .accordion-button {
+    font-size: 25px;
+  }
+  .status-item {
+    margin-bottom: 40px;
+  }
+  .status-item h2 {
+    font-size: 100px;
+  }
+  .projects-title h2 {
+    font-size: 25px;
+  }
+  .clients-content {
+    padding: 0 10%;
+  }
+
+  .border-right {
+    border-right: 0;
+  }
+
+  .aminities {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .bg-buttons a {
+    display: block;
+    text-align: center;
+  }
+
+  a.download-btn {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+
+  .corporate-item h3,
+  .publish-date p {
+    font-size: 22px;
+  }
+
+  .blog-content h6 {
+    font-size: 20px;
+  }
+
+  .footer-info {
+    text-align: center;
+    padding: 0;
+  }
+
+  .about-btn {
+    display: block;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+  }
+  .interest {
+    padding-bottom: 50px;
+  }
+  .interest h2 {
+    font-size: 20px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+    padding-bottom: 20px;
+  }
+
+  .interest input {
+    width: 100%;
+    background: transparent;
+    padding: 12px 25px;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    color: #ffffff;
+  }
+
+  input.subs-btn {
+    background: #ffffff;
+    border: 1px solid #ffffff;
+    color: #000000;
+    font-size: 16px;
+    text-transform: uppercase;
+  }
+}

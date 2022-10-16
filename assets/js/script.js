@@ -1,7 +1,17 @@
+// Menu Active Color
+
 $(document).on("click", "ul li", function(){
     $(this).addClass("active").siblings().removeClass("active")
 })
 
+// Mobile Menu 
+
+const bars = document.querySelector("#bars")
+const mobileMenu = document.querySelector(".mobile-sidebar-container")
+
+bars.addEventListener("click", function(){
+  mobileMenu.classList.toggle("active")
+})
 
 // Clients Slider
 

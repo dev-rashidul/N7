@@ -14,6 +14,9 @@
 
     <!-- Custom CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="assets/css/responsive.css" />
   </head>
   <body>
     <!-- Header Part HTML Start -->
@@ -91,6 +94,78 @@
         </div>
       </section>
 
+      <!-- Mobile Navbar Section HTML Start -->
+
+      <section id="Mobile-nav">
+        <div class="mobile-top-nav">
+          <div
+            class="mobile-top-nav-wrap d-flex justify-content-between align-items-center"
+          >
+            <div class="mobile-bar">
+              <button id="bars">
+                <img src="assets/images/bars.svg" alt="bars" />
+              </button>
+            </div>
+            <div class="mobile-logo">
+              <a href="#"><img src="assets/images/logo.svg" alt="logo" /></a>
+            </div>
+            <div class="mobile-search">
+              <a href="#"
+                ><img src="assets/images/login-user.svg" alt="login-user"
+              /></a>
+              <a class="ps-2" id="search-btn" href="#"
+                ><img src="assets/images/search-icon.svg" alt="search"
+              /></a>
+            </div>
+          </div>
+        </div>
+        <!-- Mobile Submenu Section HTML Start -->
+
+        <div id="Mobile-submenu">
+          <div
+            class="mobile-submenu-wrapper d-flex justify-content-between align-items-center"
+          >
+            <a href="#">Schedule Meeting</a>
+            <select>
+              <option>AR</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Mobile Submenu Section HTML End -->
+      </section>
+
+      <!-- Mobile Sidebar Section HTML Start -->
+
+      <section id="Mobile-sidebar">
+        <div class="contaiiner">
+          <div class="mobile-sidebar-container">
+            <div class="menu">
+              <ul class="">
+                <li class="active"><a href="#">Home</a></li>
+                <li><a href="#">Offers</a></li>
+                <li><a href="#">Buy</a></li>
+                <li><a href="#">Rent</a></li>
+                <li><a href="#">Off-Plan</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Careers</a></li>
+              </ul>
+            </div>
+            <div class="sidebar-buttons">
+              <a href="#">Whatsapp</a>
+              <a href="#">Email</a>
+            </div>
+            <div class="sidebar-copy">
+              <p>Copyright © 2022 N7 Real Estate</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Mobile Sidebar Section HTML End -->
+
+      <!-- Mobile Navbar Section HTML End -->
+
       <!-- Hero Section HTML Start -->
 
       <section id="Hero">
@@ -141,7 +216,7 @@
           <div class="container">
             <div class="accordion accordion-flush" id="accordionFlushExample">
               <div class="row">
-                <div class="col-md-6 pe-md-5">
+                <div class="col-md-6 pe-md-3 pe-lg-5">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingOne">
                       <button
@@ -233,7 +308,7 @@
                     </div>
                   </div>
                 </div>
-                <div class="col-md-6 ps-md-5">
+                <div class="col-md-6 ps-md-3 pe-lg-5">
                   <div class="accordion-item">
                     <h2 class="accordion-header" id="flush-headingFour">
                       <button
@@ -383,6 +458,289 @@
 
       <!-- Status Section HTML End -->
 
+      <!-- Projects Section HTML Start -->
+
+      <section id="Projects">
+        <div class="projects-wrapper">
+          <div class="container">
+            <div
+              class="projects-top d-lg-flex justify-content-between align-items-center"
+            >
+              <div class="projects-title">
+                <h2>Feature Projects</h2>
+              </div>
+              <div class="projects-buttons">
+                <ul class="nav nav-pills" id="pills-tab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link active"
+                      id="pills-appartments-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-appartments"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-appartments"
+                      aria-selected="true"
+                    >
+                      Appartments
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-villas-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-villas"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-villas"
+                      aria-selected="false"
+                    >
+                      Villas
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-town-house-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-town-house"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-town-house"
+                      aria-selected="false"
+                    >
+                      Town Houses
+                    </button>
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <button
+                      class="nav-link"
+                      id="pills-pent-house-tab"
+                      data-bs-toggle="pill"
+                      data-bs-target="#pills-pent-house"
+                      type="button"
+                      role="tab"
+                      aria-controls="pills-pent-house"
+                      aria-selected="false"
+                    >
+                      Pent Houses
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="tab-content" id="pills-tabContent">
+              <div
+                class="tab-pane fade show active"
+                id="pills-appartments"
+                role="tabpanel"
+                aria-labelledby="pills-appartments-tab"
+                tabindex="0"
+              >
+                <div class="row">
+                  <div class="col-md-6 col-lg-4">
+                    <div class="project-card active position-relative">
+                      <div class="project-card-img">
+                        <img
+                          class="card-img-top"
+                          src="assets/images/projects.png"
+                          alt="projects"
+                        />
+                      </div>
+                      <div class="project-card-info">
+                        <a href="#"
+                          ><img src="assets/images/heart.svg" alt="heart"
+                        /></a>
+                        <a href="#"
+                          ><img src="assets/images/man.svg" alt="man"
+                        /></a>
+                        <a href="#"
+                          ><img src="assets/images/whatsapp.svg" alt="whatsapp"
+                        /></a>
+                      </div>
+                      <div class="project-card-content">
+                        <h5>Residential</h5>
+                        <h3>Salam Tower Apartments</h3>
+                        <div
+                          class="project-details-wrap d-flex justify-content-between"
+                        >
+                          <div class="projects-details d-flex">
+                            <div class="project-name">
+                              <p>Faisal Town, Islamabad</p>
+                              <h5>AED 8,995,000</h5>
+                            </div>
+                            <div class="project-quntity">
+                              <p>
+                                <img src="assets/images/bed.svg" alt="bed" /> 2
+                                Bedrooms
+                              </p>
+                              <p>
+                                <img src="assets/images/sq.svg" alt="sq" /> 1400
+                                sq.Ft
+                              </p>
+                            </div>
+                          </div>
+                          <div class="project-button">
+                            <a href="#">Buy</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mt-5 mt-lg-0">
+                    <div class="project-card position-relative">
+                      <div class="project-card-img">
+                        <img
+                          class="card-img-top"
+                          src="assets/images/projects.png"
+                          alt="projects"
+                        />
+                      </div>
+                      <div class="project-card-info">
+                        <a href="#"
+                          ><img src="assets/images/heart.svg" alt="heart"
+                        /></a>
+                        <a href="#"
+                          ><img src="assets/images/man.svg" alt="man"
+                        /></a>
+                        <a href="#"
+                          ><img src="assets/images/whatsapp.svg" alt="whatsapp"
+                        /></a>
+                      </div>
+                      <div class="project-card-content">
+                        <h5>Residential</h5>
+                        <h3>Salam Tower Apartments</h3>
+                        <div
+                          class="project-details-wrap d-flex justify-content-between"
+                        >
+                          <div class="projects-details d-flex">
+                            <div class="project-name">
+                              <p>Faisal Town, Islamabad</p>
+                              <h5>AED 8,995,000</h5>
+                            </div>
+                            <div class="project-quntity">
+                              <p>
+                                <img src="assets/images/bed.svg" alt="bed" /> 2
+                                Bedrooms
+                              </p>
+                              <p>
+                                <img src="assets/images/sq.svg" alt="sq" /> 1400
+                                sq.Ft
+                              </p>
+                            </div>
+                          </div>
+                          <div class="project-button">
+                            <a href="#">Buy</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 col-lg-4 mt-5 mt-lg-0">
+                    <div class="project-card position-relative">
+                      <div class="project-card-img">
+                        <img
+                          class="card-img-top"
+                          src="assets/images/projects.png"
+                          alt="projects"
+                        />
+                      </div>
+                      <div class="project-card-info">
+                        <a href="#"
+                          ><img src="assets/images/heart.svg" alt="heart"
+                        /></a>
+                        <a href="#"
+                          ><img src="assets/images/man.svg" alt="man"
+                        /></a>
+                        <a href="#"
+                          ><img src="assets/images/whatsapp.svg" alt="whatsapp"
+                        /></a>
+                      </div>
+                      <div class="project-card-content">
+                        <h5>Residential</h5>
+                        <h3>Salam Tower Apartments</h3>
+                        <div
+                          class="project-details-wrap d-flex justify-content-between"
+                        >
+                          <div class="projects-details d-flex">
+                            <div class="project-name">
+                              <p>Faisal Town, Islamabad</p>
+                              <h5>AED 8,995,000</h5>
+                            </div>
+                            <div class="project-quntity">
+                              <p>
+                                <img src="assets/images/bed.svg" alt="bed" /> 2
+                                Bedrooms
+                              </p>
+                              <p>
+                                <img src="assets/images/sq.svg" alt="sq" /> 1400
+                                sq.Ft
+                              </p>
+                            </div>
+                          </div>
+                          <div class="project-button">
+                            <a href="#">Buy</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="see-all-projects-btn">
+                  <a href="#">
+                    <img
+                      class="pe-2"
+                      src="assets/images/double-arrow-right.svg"
+                      alt="double-arrow-right"
+                    />
+                    See All</a
+                  >
+                </div>
+              </div>
+
+              <!-- Tab Options for Villas -->
+
+              <div
+                class="tab-pane fade"
+                id="pills-villas"
+                role="tabpanel"
+                aria-labelledby="pills-villas-tab"
+                tabindex="0"
+              >
+                <h2>This is Villas</h2>
+              </div>
+
+              <!-- Tab Options for Town Houese -->
+
+              <div
+                class="tab-pane fade"
+                id="pills-town-house"
+                role="tabpanel"
+                aria-labelledby="pills-town-house-tab"
+                tabindex="0"
+              >
+                <h2>This is Town House</h2>
+              </div>
+
+              <!-- Tab Options for Pent Houese -->
+
+              <div
+                class="tab-pane fade"
+                id="pills-pent-house"
+                role="tabpanel"
+                aria-labelledby="pills-pent-house-tab"
+                tabindex="0"
+              >
+                <h2>This is Pent House</h2>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section HTML End -->
+
       <!-- Beachgate Section HTML Start -->
 
       <section id="Beachgate">
@@ -414,7 +772,7 @@
             </div>
           </div>
           <div class="row beachgate-bottom">
-            <div class="col-md-6">
+            <div class="col-lg-6">
               <h3>Aminities</h3>
               <div class="aminities">
                 <div class="aminities-item">
@@ -446,7 +804,7 @@
                 </div>
               </div>
             </div>
-            <div class="col-md-6 ps-md-5">
+            <div class="col-lg-6 ps-lg-5 mt-5 mt-lg-0">
               <div class="bg-explore">
                 <h2>Beachgate</h2>
                 <p>
@@ -492,7 +850,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mt-5 mt-md-0">
               <div class="corporate-item">
                 <h3>Innovative</h3>
                 <p>
@@ -507,7 +865,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mt-5 mt-lg-0">
               <div class="corporate-item">
                 <h3>Respect</h3>
                 <p>
@@ -523,7 +881,7 @@
                 />
               </div>
             </div>
-            <div class="col-md-6 col-lg-3">
+            <div class="col-md-6 col-lg-3 mt-5 mt-lg-0">
               <div class="corporate-item">
                 <h3>Hassle Free Service</h3>
                 <p>
@@ -561,7 +919,7 @@
       <section id="Clients">
         <div class="clients-wrapper overflow-hidden">
           <div class="row align-items-center">
-            <div class="col-md-4">
+            <div class="col-lg-4">
               <div class="clients-content">
                 <h2>Real Estate Experts</h2>
                 <p>
@@ -572,7 +930,7 @@
                 <a href="#">Get Consult</a>
               </div>
             </div>
-            <div class="col-md-8">
+            <div class="col-lg-8 mt-5 mt-lg-0 ps-4 ps-lg-0">
               <div class="clients-slider">
                 <div class="slider">
                   <img src="assets/images/client1.png" alt="client1" />
@@ -599,7 +957,7 @@
               <h2>Recent Blogs</h2>
             </div>
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-md-6 col-lg-4 mt-5 mt-md-0">
                 <div class="blog-card position-relative">
                   <div class="blog-img">
                     <img
@@ -627,7 +985,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6 col-lg-4 mt-5 mt-md-0">
                 <div class="blog-card position-relative">
                   <div class="blog-img">
                     <img
@@ -654,7 +1012,7 @@
                   </div>
                 </div>
               </div>
-              <div class="col-md-4">
+              <div class="col-md-6 col-lg-4 mt-5 mt-lg-0">
                 <div class="blog-card position-relative">
                   <div class="blog-img">
                     <img
@@ -709,7 +1067,13 @@
         <div class="footer-wrapper">
           <div class="container">
             <div class="row">
-              <div class="col-md-4">
+              <div class="col-lg-4">
+                <div class="interest">
+                  <h2>Register Your Interest</h2>
+                  <input type="text" placeholder="Enter your email address" />
+                  <input class="subs-btn" type="submit" value="Subscribe" />
+                </div>
+
                 <div class="footer-info">
                   <img src="assets/images/logo.svg" alt="logo" />
                   <p>
@@ -718,11 +1082,27 @@
                     Jewel of N7 Corporate Group that is carrying the N7’s vision
                     of World Class Service & Luxury Blended together.
                   </p>
-                  <a href="#">About Us</a>
-                  <p>Copyright © 2022 N7 Real Estate</p>
+                  <div class="footer-social d-lg-none text-center mb-5">
+                    <a href="#"
+                      ><img src="assets/images/facebook.svg" alt="facebook"
+                    /></a>
+                    <a href="#"
+                      ><img src="assets/images/instagram.svg" alt="instagram"
+                    /></a>
+                    <a href="#"
+                      ><img src="assets/images/twitter.svg" alt="twitter"
+                    /></a>
+                    <a href="#"
+                      ><img src="assets/images/linkedin.svg" alt="linkedin"
+                    /></a>
+                  </div>
+                  <a class="about-btn" href="#">About Us</a>
+                  <p class="copyright d-none d-lg-block">
+                    Copyright © 2022 N7 Real Estate
+                  </p>
                 </div>
               </div>
-              <div class="col-md-5">
+              <div class="col-lg-5 mt-5 mt-lg-0">
                 <div class="d-flex justify-content-between">
                   <div class="footer-links">
                     <h5>Site Map</h5>
@@ -735,7 +1115,7 @@
                       <li><a href="#">Careers</a></li>
                       <li><a href="#">Contact Us</a></li>
                     </div>
-                    <div class="footer-social">
+                    <div class="footer-social d-none d-lg-block">
                       <a href="#"
                         ><img src="assets/images/facebook.svg" alt="facebook"
                       /></a>
@@ -762,12 +1142,12 @@
                     </div>
                   </div>
                 </div>
-                <div class="privacy">
+                <div class="privacy d-none d-lg-block">
                   <a href="#">Privacy</a>
                   <a href="#">Terms & Conditions</a>
                 </div>
               </div>
-              <div class="col-md-3">
+              <div class="col-lg-3 mt-5 mt-lg-0">
                 <div class="visit">
                   <h5>Request a Visit</h5>
                   <div class="visit-form">
@@ -797,6 +1177,13 @@
                       </div>
                     </form>
                   </div>
+                </div>
+                <div class="d-lg-none text-center">
+                  <div class="privacy d-lg-none">
+                    <a href="#">Privacy</a>
+                    <a class="p-0" href="#">Terms & Conditions</a>
+                  </div>
+                  <p class="copyright">Copyright © 2022 N7 Real Estate</p>
                 </div>
               </div>
             </div>
