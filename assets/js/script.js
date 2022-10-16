@@ -10,8 +10,35 @@ const bars = document.querySelector("#bars")
 const mobileMenu = document.querySelector(".mobile-sidebar-container")
 
 bars.addEventListener("click", function(){
+  this.classList.toggle("active")
   mobileMenu.classList.toggle("active")
 })
+
+
+// Schedule Meeting Form JS
+
+const overlay = document.getElementById("overlay")
+const meetingBtn = document.getElementById("sc-meeting")
+const meetingBtn2 = document.getElementById("sc-meeting2")
+const meeting = document.getElementById("Meeting")
+const meetingClose = document.getElementById("schedule-close")
+
+meetingBtn.addEventListener("click", function(){
+  meeting.classList.add("active")
+  overlay.style.display="block"
+})
+
+meetingBtn2.addEventListener("click", function(){
+  meeting.classList.add("active")
+  overlay.style.display="block"
+})
+
+meetingClose.addEventListener("click", function(){
+  meeting.classList.remove("active")
+  overlay.style.display="none"
+})
+
+
 
 // Clients Slider
 

@@ -100,10 +100,54 @@ img {
 }
 
 .mobile-bar #bars {
+  width: 30px;
+  height: 30px;
   background: none;
   border: none;
   outline: none;
   cursor: pointer;
+}
+
+#bars span {
+  position: relative;
+  display: block;
+  width: 30px;
+  height: 1px;
+  background: #ffffff;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+#bars.active span {
+  background: transparent;
+}
+
+#bars span::before,
+#bars span::after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  transition: all 0.3s ease-in-out;
+}
+
+#bars span::before {
+  transform: translateY(-9px);
+}
+
+#bars span::after {
+  transform: translateY(9px);
+}
+
+#bars.active span::before {
+  transform: rotate(45deg);
+}
+
+#bars.active span::after {
+  transform: rotate(135deg);
 }
 
 #Mobile-submenu {
@@ -111,9 +155,11 @@ img {
   padding: 10px 25px;
 }
 
-.mobile-submenu-wrapper a {
+.mobile-submenu-wrapper p {
   font-style: italic;
   color: #ffffff;
+  margin: 0;
+  cursor: pointer;
 }
 
 .mobile-submenu-wrapper select {
@@ -198,9 +244,101 @@ section#Submenu {
   font-size: 17px;
   font-weight: 600;
   color: #ffffff;
+  cursor: pointer;
 }
 
 /* Submenu Section CSS End */
+
+/* Schedule Meeting Form Section HTML Start */
+
+#Meeting {
+  display: none;
+  overflow: hidden;
+}
+
+#Meeting.active {
+  display: block;
+}
+
+#overlay {
+  position: fixed;
+  display: none;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #707070c5;
+  z-index: 2;
+}
+
+.meeting-form {
+  position: fixed;
+  top: 180px;
+  left: 50%;
+  transform: translate(-50%);
+  max-width: 1000px;
+  width: 100%;
+  background: #000000;
+  padding: 30px 25px;
+  z-index: 5;
+}
+
+#schedule-close {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  background: transparent;
+  border: none;
+  outline: 0;
+  cursor: pointer;
+}
+
+.meeting-form h2 {
+  font-size: 30px;
+  color: #ffffff;
+  padding-top: 10px;
+  padding-bottom: 30px;
+}
+
+.scm-field {
+  margin-bottom: 20px;
+}
+
+.scm-field label {
+  font-size: 20px;
+  color: #ffffff;
+  padding-bottom: 10px;
+}
+
+.scm-field select,
+.scm-field input,
+.scm-field textarea {
+  max-width: 100%;
+  width: 100%;
+  background: #000000;
+  padding: 10px 20px;
+  border: 1px solid #ffffff;
+  color: #595959;
+  border-radius: 5px;
+}
+
+a.reset-btn {
+  font-size: 20px;
+  color: #c49e55;
+}
+
+a.schedule-btn {
+  background: #ffffff;
+  color: #000000;
+  font-size: 20px;
+  padding: 9px 22px;
+  border-radius: 5px;
+  margin-left: 50px;
+}
+
+/* Schedule Meeting Form Section HTML End */
 
 /* Hero Section CSS Start */
 
@@ -876,7 +1014,8 @@ a.download-btn {
   color: #ffffff;
 }
 
-.field-group ::placeholder {
+.field-group ::placeholder,
+.field-group ::-moz-placeholder {
   color: #ffffff;
 }
 

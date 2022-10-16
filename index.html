@@ -47,15 +47,80 @@
               <div class="login">
                 <a href="#">Login</a>
                 <select>
-                  <option style="background: url(./assets/images/uae.svg)">
-                    AR
-                  </option>
+                  <option>AR</option>
                 </select>
               </div>
             </div>
           </div>
         </div>
       </nav>
+
+      <!-- Schedule Meeting Modal Section HTML Start -->
+
+      <div id="overlay"></div>
+      <section id="Meeting">
+        <div class="meeting-form">
+          <button id="schedule-close">
+            <img src="assets/images/close-icon.svg" alt="close-icon" />
+          </button>
+          <h2>Schedule a Meeting!</h2>
+          <form>
+            <div class="scm-field">
+              <label>Schedule for</label>
+              <select>
+                <option>MySelf</option>
+                <option>YourSelf</option>
+              </select>
+            </div>
+            <div class="scm-field">
+              <label>Meeting Topic</label>
+              <textarea rows="2" placeholder="Topic ……"></textarea>
+            </div>
+            <div
+              class="d-flex flex-wrap justify-content-between align-items-center"
+            >
+              <div class="scm-field date-select">
+                <label>Date</label>
+                <select>
+                  <option>Friday, Aug 2, 2022</option>
+                  <option>Monday, Aug 5, 2022</option>
+                </select>
+              </div>
+              <div class="scm-field time-select">
+                <label>Time</label>
+                <select>
+                  <option>8:15 AM</option>
+                  <option>9:15 PM</option>
+                </select>
+              </div>
+              <div class="scm-field time-select">
+                <label>Medium</label>
+                <select>
+                  <option>Zoom</option>
+                  <option>Google Meet</option>
+                </select>
+              </div>
+            </div>
+            <div class="d-flex justify-content-between align-items-center">
+              <div class="w-50">
+                <div class="scm-field">
+                  <label>Attendees</label>
+                  <input
+                    type="text"
+                    placeholder="Separate email addresses with a comma or semicolon"
+                  />
+                </div>
+              </div>
+              <div>
+                <a class="reset-btn" href="#">Reset</a>
+                <a class="schedule-btn" href="#">Schedule</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <!-- Schedule Meeting Modal Section HTML End -->
 
       <!-- Navbar Section HTML End -->
 
@@ -88,7 +153,7 @@
               />
             </div>
             <div class="schedule-meeting">
-              <p>Schedule a Meeting</p>
+              <p id="sc-meeting">Schedule a Meeting</p>
             </div>
           </div>
         </div>
@@ -103,7 +168,7 @@
           >
             <div class="mobile-bar">
               <button id="bars">
-                <img src="assets/images/bars.svg" alt="bars" />
+                <span></span>
               </button>
             </div>
             <div class="mobile-logo">
@@ -125,7 +190,7 @@
           <div
             class="mobile-submenu-wrapper d-flex justify-content-between align-items-center"
           >
-            <a href="#">Schedule Meeting</a>
+            <p id="sc-meeting2">Schedule Meeting</p>
             <select>
               <option>AR</option>
             </select>
@@ -1068,7 +1133,7 @@
           <div class="container">
             <div class="row">
               <div class="col-lg-4">
-                <div class="interest">
+                <div class="interest d-lg-none">
                   <h2>Register Your Interest</h2>
                   <input type="text" placeholder="Enter your email address" />
                   <input class="subs-btn" type="submit" value="Subscribe" />
