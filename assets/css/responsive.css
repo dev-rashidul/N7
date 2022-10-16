@@ -88,6 +88,12 @@
     height: 60vh;
   }
 
+  .date-select select,
+  .time-select select {
+    max-width: 100%;
+    width: 100%;
+  }
+
   .davinci-top h2,
   .beachgate-top h2,
   .bg-explore h2,
@@ -194,6 +200,10 @@
 
   .search-form-container {
     top: 100px;
+  }
+
+  .meeting-form {
+    top: 129px;
   }
 
   .range-slider {
