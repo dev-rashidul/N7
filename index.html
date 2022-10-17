@@ -74,16 +74,36 @@
                       </div>
                       <div class="property-status">
                         <label>Property Status</label>
-                        <div class="d-flex">
-                          <select>
-                            <option>Rent</option>
-                          </select>
-                          <select class="mx-3">
-                            <option>Sale</option>
-                          </select>
-                          <select>
-                            <option>Off-Plan</option>
-                          </select>
+                        <div class="d-flex justify-content-between">
+                          <input
+                            type="checkbox"
+                            class="btn-check"
+                            id="btn-sale"
+                            autocomplete="off"
+                          />
+                          <label class="btn property-status-btn" for="btn-sale"
+                            >Sale</label
+                          >
+                          <input
+                            type="checkbox"
+                            class="btn-check"
+                            id="btn-rent"
+                            autocomplete="off"
+                          />
+                          <label class="btn property-status-btn" for="btn-rent"
+                            >Rent</label
+                          >
+                          <input
+                            type="checkbox"
+                            class="btn-check"
+                            id="btn-off-plan"
+                            autocomplete="off"
+                          />
+                          <label
+                            class="btn property-status-btn"
+                            for="btn-off-plan"
+                            >Off-Plan</label
+                          >
                         </div>
                       </div>
                       <div class="proper-type-location">

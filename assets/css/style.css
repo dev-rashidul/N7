@@ -184,7 +184,7 @@ img {
 
 .mobile-sidebar-container {
   position: fixed;
-  top: 128px;
+  top: 126px;
   left: -100%;
   width: 300px;
   height: 100%;
@@ -356,6 +356,11 @@ a.schedule-btn {
   padding: 9px 22px;
   border-radius: 5px;
   margin-left: 50px;
+  transition: all 0.3s ease-in-out;
+}
+
+a.schedule-btn:hover {
+  color: #c49e55;
 }
 
 /* Schedule Meeting Form Section HTML End */
@@ -382,7 +387,6 @@ a.schedule-btn {
   padding: 30px 0;
 }
 
-.property-status select,
 .proper-type-location select,
 .bedroom-select select {
   width: 100%;
@@ -393,6 +397,28 @@ a.schedule-btn {
   padding: 10px 20px;
   border-radius: 5px;
   margin-bottom: 15px;
+}
+
+.property-status-btn,
+.property-status-btn:hover {
+  max-width: 32%;
+  width: 100%;
+  color: #ffffff !important;
+  border: 1px solid #ffffff !important;
+  padding: 10px 0;
+}
+
+.btn-check:checked + .btn,
+.btn.active,
+.btn.show,
+.btn:first-child:active,
+:not(.btn-check) + .btn:active {
+  background: #ffffff;
+  color: #000000 !important;
+}
+
+.proper-type-location {
+  padding-top: 15px;
 }
 
 .search-form label {
@@ -499,6 +525,11 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   padding: 8px 30px;
   border: 1px solid #ffffff;
   border-radius: 5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-reset:hover {
+  color: #c49e55;
 }
 
 .search-btn {
@@ -509,6 +540,11 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   border: 1px solid #ffffff;
   border-radius: 5px;
   margin-left: 20px;
+  transition: all 0.3s ease-in-out;
+}
+
+.search-btn:hover {
+  color: #c49e55;
 }
 
 .search-form ::placeholder {
