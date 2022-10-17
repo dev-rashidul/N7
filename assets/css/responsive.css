@@ -52,6 +52,10 @@
   .projects-title h2 {
     font-size: 25px;
   }
+
+  .project-card {
+    width: 420px;
+  }
   .clients-content {
     padding: 0 10%;
   }
