@@ -11,6 +11,10 @@
 }
 
 @media (min-width: 768px) and (max-width: 1199px) {
+  .search-form-container {
+    top: 129px;
+  }
+
   .davinci-top h2,
   .beachgate-top h2,
   .bg-explore h2,
@@ -139,6 +143,18 @@
     padding-top: 20px;
   }
 
+  .project-card {
+    width: 350px;
+  }
+
+  .project-card-content h5 {
+    font-size: 12px;
+  }
+
+  .project-card-content h3 {
+    font-size: 18px;
+  }
+
   .nav-pills .nav-link {
     font-size: 11px;
     padding: 0 11px;
@@ -147,6 +163,11 @@
   .projects-title h2 {
     font-size: 25px;
   }
+
+  .corporate-item {
+    margin: 0 25px;
+  }
+
   .clients-content {
     padding: 0 10%;
   }
@@ -221,12 +242,13 @@
   .search-form-container {
     top: 129px;
     width: 80%;
+    right: 0;
   }
 
   .meeting-form {
-    top: 129px;
+    top: 75%;
+    left: 50%;
     width: 80%;
-    left: 40%;
   }
 
   .meeting-form h2 {
