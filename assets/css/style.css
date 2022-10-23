@@ -4,6 +4,24 @@
 
 @import url("https://fonts.googleapis.com/css2?family=EB+Garamond:wght@400;500;700&family=GFS+Didot&family=Montserrat:wght@200;300;400;500;600;700&display=swap");
 
+@font-face {
+  font-family: didot;
+  src: url(../font/didot-light.ttf);
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: didot;
+  src: url(../font/didot-medium.ttf);
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: didot;
+  src: url(../font/didot-bold.ttf);
+  font-weight: 700;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -11,8 +29,6 @@
 
 body {
   font-family: "Montserrat", sans-serif;
-  /* font-family: "EB Garamond", serif;
-  font-family: "GFS Didot", serif; */
   scroll-behavior: smooth;
   background: #000000;
 }
@@ -235,7 +251,16 @@ section#Submenu {
 }
 
 .menu-social a {
-  padding-right: 25px;
+  padding-right: 20px;
+}
+
+.menu-social a i {
+  color: #ffffff;
+}
+
+.menu-social a i:hover {
+  color: #c49e55;
+  transition: all 0.3s;
 }
 
 .search p {
@@ -338,7 +363,7 @@ p#sc-meeting:hover {
   max-width: 100%;
   width: 100%;
   background: #000000;
-  padding: 10px 20px;
+  padding: 7px 20px;
   border: 1px solid #ffffff;
   color: #595959;
   border-radius: 5px;
@@ -369,10 +394,12 @@ a.schedule-btn:hover {
 
 #Search {
   display: none;
+  transition: all 3s;
 }
 
 #Search.active {
   display: block;
+  transition: all 2s;
 }
 
 .search {
@@ -385,6 +412,7 @@ a.schedule-btn:hover {
   top: 170px;
   background: #111111;
   padding: 30px 0;
+  transition: all 1s;
 }
 
 .proper-type-location select,
@@ -394,7 +422,7 @@ a.schedule-btn:hover {
   color: #ffffff;
   border: 1px solid #ffffff;
   outline: none;
-  padding: 10px 20px;
+  padding: 8px 20px;
   border-radius: 5px;
   margin-bottom: 15px;
 }
@@ -405,7 +433,7 @@ a.schedule-btn:hover {
   width: 100%;
   color: #ffffff !important;
   border: 1px solid #ffffff !important;
-  padding: 12px 0px 10px 0px !important;
+  padding: 9px 0px 10px 0px !important;
 }
 
 .btn-check:checked + .btn,
@@ -442,7 +470,7 @@ a.schedule-btn:hover {
   outline: none;
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
+  padding: 8px 20px;
 }
 
 .search-field.search-field1 input:active,
@@ -556,7 +584,7 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
 /* Hero Section CSS Start */
 
 .hero-wrapper {
-  padding: 80px 0;
+  padding: 15px 0;
 }
 
 .hero-video {
@@ -576,11 +604,15 @@ iframe {
 
 /* Davinci Section CSS Start */
 
+.davinci-wrapper {
+  padding-top: 25px;
+}
+
 .davinci-content {
   background: url(../images/davinci.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 700px;
+  height: 600px;
 }
 
 .davinci-top,
@@ -590,14 +622,14 @@ iframe {
 
 .davinci-top h2,
 .beachgate-top h2 {
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .davinci-top p,
 .beachgate-top p {
-  font-size: 22px;
+  font-size: 18px;
   color: #c49e55;
   letter-spacing: 10px;
 }
@@ -699,7 +731,7 @@ iframe {
 
 .status-wrapper {
   background: #111111;
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .status-item {
@@ -734,7 +766,7 @@ iframe {
 /* Beachgate Section CSS Start */
 
 #Beachgate {
-  padding: 80px 0;
+  padding: 50px 0;
   background: #111111;
 }
 
@@ -743,7 +775,7 @@ iframe {
   margin: auto;
   display: flex;
   justify-content: space-between;
-  padding: 50px 0;
+  padding: 30px 0;
 }
 
 .beachgate-time .status-item {
@@ -798,6 +830,10 @@ iframe {
   text-align: center;
 }
 
+.aminities-item img {
+  width: 30%;
+}
+
 .aminities-item h5 {
   font-size: 18px;
   letter-spacing: 5px;
@@ -806,7 +842,7 @@ iframe {
 }
 
 .bg-explore h2 {
-  font-size: 48px;
+  font-size: 42px;
   text-transform: uppercase;
   color: #ffffff;
 }
@@ -857,11 +893,11 @@ a.download-btn:hover {
 /* Projects Section CSS Start */
 
 .projects-wrapper {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .projects-title h2 {
-  font-size: 48px;
+  font-size: 40px;
   color: #ffffff;
 }
 
@@ -900,9 +936,10 @@ a.download-btn:hover {
 .project-card {
   border: 1px solid #ffffff;
   padding: 15px;
+  transition: all 0.3s ease-in-out;
 }
 
-.project-card.active {
+.project-card:hover {
   box-shadow: 0px 0px 55px -10px #c49e55;
 }
 
@@ -995,7 +1032,7 @@ a.download-btn:hover {
 /* Corporate Section CSS Start */
 
 #Corporate {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .corporate-top {
@@ -1003,27 +1040,27 @@ a.download-btn:hover {
 }
 
 .corporate-top h2 {
-  font-size: 48px;
+  font-size: 40px;
   text-transform: uppercase;
   color: #ffffff;
 }
 
 .corporate-top p {
-  font-size: 22px;
+  font-size: 18px;
   font-weight: 300;
   color: #ffffff;
   padding-top: 15px;
 }
 
 .corporate-items {
-  padding-top: 80px;
+  padding-top: 50px;
 }
 
 .corporate-item {
   position: relative;
   border: 1px solid #ffffff;
   border-radius: 5px;
-  padding: 80px 10px 80px 80px;
+  padding: 40px 10px 40px 80px;
 }
 
 .corporate-item h3 {
@@ -1049,7 +1086,7 @@ a.download-btn:hover {
 /* Company Section CSS Start */
 
 #Company {
-  padding: 80px 0;
+  padding: 50px 0;
   background: #111111;
 }
 
@@ -1064,10 +1101,11 @@ a.download-btn:hover {
 /* Clients Section CSS Start */
 
 .clients-wrapper {
-  padding: 80px 0;
+  padding: 50px 0;
 }
 
 .slider img {
+  height: 420px;
   padding: 0 25px;
 }
 
@@ -1109,14 +1147,22 @@ a.download-btn:hover {
 /* Blog Section CSS Start */
 
 .blog-wrapper {
-  padding: 80px 0;
+  padding: 50px 0;
   background: #111111;
 }
 
 .blog-top h2 {
-  font-size: 48px;
+  font-size: 40px;
   color: #ffffff;
   padding-bottom: 50px;
+}
+
+.blog-card {
+  height: 420px;
+}
+
+.blog-img img {
+  height: 420px;
 }
 
 .blog-card::after {
@@ -1163,8 +1209,13 @@ a.download-btn:hover {
 
 /* Footer Section css Start */
 
+.map img {
+  height: 700px;
+  width: 100%;
+}
+
 .footer-wrapper {
-  padding: 80px 0;
+  padding: 50px 0;
   background: #111111;
 }
 
@@ -1173,6 +1224,10 @@ a.download-btn:hover {
   font-weight: 300;
   color: #ffffff;
   padding: 50px 0;
+}
+
+.footer-info a img {
+  margin-left: 32%;
 }
 
 .copyright {
@@ -1184,6 +1239,7 @@ a.download-btn:hover {
 .about-btn {
   font-size: 22px;
   color: #ffffff;
+  text-align: left !important;
   padding: 12px 50px;
   border: 1px solid #ffffff;
   border-radius: 5px;
@@ -1222,7 +1278,16 @@ a.download-btn:hover {
 }
 
 .footer-social a {
-  padding-right: 27px;
+  padding-right: 20px;
+}
+
+.footer-social a i {
+  color: #ffffff;
+}
+
+.footer-social a i:hover {
+  color: #c49e55;
+  transition: all 0.3s ease-in-out;
 }
 
 .privacy {
