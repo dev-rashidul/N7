@@ -263,21 +263,22 @@ section#Submenu {
   transition: all 0.3s;
 }
 
+.search-properties {
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+.search-properties:hover * {
+  color: #c49e55 !important;
+}
+
 .search p {
   font-size: 17px;
   font-weight: 600;
   color: #ffffff;
   margin: 0;
   padding-left: 5px;
-  transition: all 0.3s ease-in-out;
-}
-
-.search p:hover {
-  color: #c49e55;
-}
-
-.chevron-down {
-  margin-top: -15px;
 }
 
 .schedule-meeting p {
@@ -394,6 +395,7 @@ a.schedule-btn:hover {
 
 .search {
   cursor: pointer;
+  margin-bottom: -8px;
 }
 
 #Search {
@@ -1104,7 +1106,11 @@ a.download-btn:hover {
 .company-brands {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
-  gap: 25px;
+  justify-items: center;
+}
+
+.company-brands img {
+  width: 60%;
 }
 
 /* Company Section CSS End */
