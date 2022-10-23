@@ -392,6 +392,10 @@ a.schedule-btn:hover {
 
 /* Search Form Section CSS Start */
 
+.search {
+  cursor: pointer;
+}
+
 #Search {
   display: none;
   transition: all 3s;
@@ -402,17 +406,13 @@ a.schedule-btn:hover {
   transition: all 2s;
 }
 
-.search {
-  cursor: pointer;
-}
-
 .search-form-container {
   position: absolute;
   width: 100%;
   top: 170px;
   background: #111111;
-  padding: 30px 0;
-  transition: all 1s;
+  padding: 30px 0 0;
+  transition: 1s;
 }
 
 .proper-type-location select,
@@ -433,7 +433,7 @@ a.schedule-btn:hover {
   width: 100%;
   color: #ffffff !important;
   border: 1px solid #ffffff !important;
-  padding: 9px 0px 10px 0px !important;
+  padding: 7px 0px 7px 0px !important;
 }
 
 .btn-check:checked + .btn,
@@ -579,6 +579,17 @@ input[type="range"]:focus::-webkit-slider-runnable-track {
   color: #ffffff;
 }
 
+.arrow-down {
+  margin-top: 20px;
+  text-align: center;
+  background: #000000;
+  padding: 10px 0;
+}
+
+.arrow-down button {
+  background: transparent;
+}
+
 /* Search Form Section CSS End */
 
 /* Hero Section CSS Start */
@@ -612,7 +623,7 @@ iframe {
   background: url(../images/davinci.png);
   background-size: cover;
   background-repeat: no-repeat;
-  height: 600px;
+  height: 500px;
 }
 
 .davinci-top,
@@ -680,7 +691,7 @@ iframe {
 }
 
 .accordion-button {
-  font-size: 30px;
+  font-size: 24px;
   color: #ffffff;
   background: transparent !important;
   padding-left: 40px;
