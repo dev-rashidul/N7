@@ -269,7 +269,11 @@ section#Submenu {
   color: #ffffff;
 }
 
-.search-properties:hover * {
+.search-properties:hover i {
+  color: #c49e55 !important;
+}
+
+.search-properties:hover .search p {
   color: #c49e55 !important;
 }
 
